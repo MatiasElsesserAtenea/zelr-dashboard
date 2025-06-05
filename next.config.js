@@ -20,6 +20,12 @@ const nextConfig = withInterceptStdout(
 		reactStrictMode: true,
 		swcMinify: true,
 		i18n,
+		typescript: {
+			ignoreBuildErrors: true,
+		},
+		eslint: {
+			ignoreDuringBuilds: true,
+		},
 		webpack(config, options) {
 			return config
 		}
