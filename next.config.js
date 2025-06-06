@@ -17,7 +17,7 @@ const nextConfig = withInterceptStdout(
 		images: {
 			disableStaticImages: true
 		},
-		reactStrictMode: true,
+		reactStrictMode: false,
 		swcMinify: true,
 		i18n,
 		typescript: {
