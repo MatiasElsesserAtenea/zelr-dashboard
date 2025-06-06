@@ -27,6 +27,11 @@ const nextConfig = withInterceptStdout(
 			ignoreDuringBuilds: true,
 		},
 		webpack(config, options) {
+			config.optimization.splitChunks = {
+				chunks: "all",
+				maxSize: 50000, 
+			};
+			config.cache = false; 
 			return config
 		}
 	}),
